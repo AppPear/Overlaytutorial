@@ -86,6 +86,9 @@ NSString * const OverlayNotificationKey	= @"OverlayRemoved";
 }
 - (id)initWithFrame:(CGRect)frame withImageNamed:(NSString *)imageName withUserInteraction:(BOOL)userInteraction
 {
+    if (![UIApplication sharedApplication].statusBarHidden){
+        frame.origin.y = frame.origin.y-20;
+    }
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
