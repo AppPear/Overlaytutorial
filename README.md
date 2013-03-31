@@ -1,7 +1,8 @@
-Overlaytutorial
+Overlay tutorial
 ===============
 Hi!
 This little code is created to help add and manage overlays (image) in your app, especially tutorials.
+![](Screenshot.png)
 
 Import the Overlaytutorial.h file or prefix it, then you can add the overlay with this simple method:
 ```Objective-C   [TutorialOverlay addOverlayInView:self.view withImageNamed:@"image.png" withAnimation:YES withUserInteraction:YES];```
